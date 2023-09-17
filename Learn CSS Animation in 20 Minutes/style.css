@@ -1,0 +1,65 @@
+:root {
+  --clr-dark: #070a12;
+  --clr-light: #f9f9fb;
+  --clr-accent: #f43f70;
+  --clr-rgba: rgba(244, 63, 112, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  word-spacing: 1.4px;
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  color: var(--clr-accent);
+  background-color: var(--clr-rgba);
+  border: 10px solid var(--clr-accent);
+  border-radius: 5px;
+
+  transition-property: transform;
+  /* Define which property the transition effect should be applied to */
+  /* karna kita mengunakan property tranfrm pada hover maka gunakan property transform */
+  transition-duration: 0.3s;
+  /* defines how long the transition effect should take to complete I'm going to set it to 0.3 seconds*/
+  transition-timing-function: ease;
+  /* defines the acceleration curve for the transition the common possible
+  values that go in are *Ease in *Ease out *ease-in-out *lienar *ease-> default*/
+  transition-delay: 0s;
+  /* define the delay before the transition should take effect, I want to start the moment
+  the element is hovered on so I set this one to 0s when we hover over our button we see tje button moves 10 pixels up*/
+
+  /* Bisa pake shorthand begini */
+  /* Karna semuana pake 0.3s/gada value yang beda maka bisa pake all */
+  transition: all 0.3s ease 0s;
+
+  /* Contoh comma sprated/di define 1-1 property nya */
+  /* transition: transform 0.3s ease 0s, background-color 0.3s, color 0.3s; */
+}
+
+.btn:hover {
+    /* Property ini yang nanti masuk di transition */
+  transform: translateY(-10px);
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+}
