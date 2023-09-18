@@ -54,7 +54,7 @@ body {
   transition: all 0.3s ease 0s;
 
   /* Contoh comma sprated/di define 1-1 property nya */
-  /* transition: transform 0.3s ease 0s, background-color 0.3s, color 0.3s; */
+  transition: transform 0.3s ease 0s, background-color 0.3s, color 0.3s;
 }
 
 .btn:hover {

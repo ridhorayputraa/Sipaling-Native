@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+/* sipp */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  word-spacing: 1.4px;
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes sideInLef{
+    /* *from represent the begning of animation  
+    or 0% completed
+    */
+    from{
+
+    }
+/* *to represent the end of the animation or 100 completed */
+    to{
+
+    }
+}
