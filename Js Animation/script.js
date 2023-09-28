@@ -10,3 +10,5 @@ if (usia > 18 || usia == 30) {
 for(let i = 0; i <=100; i++){
     console.log('ini adalah perulangan yang ke-', i)
 }
+
+// Mantap mang
