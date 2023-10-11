@@ -20,3 +20,4 @@ console.log(spanHi.setAttribute('tittle', 'mantap'))
 // Bisa pake cara ini
 spanHi.id = 'OKEEEEEE'
 // okee
+// okee
