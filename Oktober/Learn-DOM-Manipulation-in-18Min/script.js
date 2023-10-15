@@ -21,3 +21,4 @@ console.log(spanHi.setAttribute('tittle', 'mantap'))
 spanHi.id = 'OKEEEEEE'
 // okee
 // okee
+// okee
